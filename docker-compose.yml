@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  db_postgres:
+    restart: always
+    image: postgres
+    environment:
+      POSTGRES_DB: "java_raiz"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "123"
+    ports:
+      - "15432:5432"
